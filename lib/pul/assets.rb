@@ -2,6 +2,7 @@ require "pul/assets/version"
 
 module Pul
   module Assets
-    # Your code goes here...
+    class Engine < Rails::Engine
+    end
   end
 end
