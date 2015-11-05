@@ -1,6 +1,6 @@
-# Pul::Assets
+# Princeton University Library - Assets
 
-Gem of resuable PUL JS, Sass, graphics, etc.
+Gem of resuable PUL JS, Sass, graphics, etc. for Rails apps.
 
 ## Installation
 
@@ -20,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In your application.scss file, add:
+
+    @import 'pul-assets';
 
 ## Development
 
