@@ -1,7 +1,15 @@
-// For Pattern Lab
-// @include font-face(DejaVu Sans, "/fonts/DejaVu/DejaVuSansCondensed");
-// @include font-face(DejaVu Sans, "/fonts/DejaVu/DejaVuSansCondensed-Bold", bold);
+@font-face {
+  font-family: "DejaVu Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: font-url("DejaVuSansCondensed.eot");
+  src: font-url("DejaVuSansCondensed.eot?#iefix") format("embedded-opentype"), font-url("DejaVuSansCondensed.woff2") format("woff2"), font-url("DejaVuSansCondensed.woff") format("woff"), font-url("DejaVuSansCondensed.ttf") format("truetype"), font-url("DejaVuSansCondensed.svg#DejaVuSans") format("svg");
+}
 
-// For Drupal projects
-@include font-face(DejaVu Sans, "/sites/all/themes/pul_base/assets/public/fonts/DejaVu/DejaVuSansCondensed");
-@include font-face(DejaVu Sans, "/sites/all/themes/pul_base/assets/public/fonts/DejaVu/DejaVuSansCondensed-Bold", bold);
+@font-face {
+  font-family: "DejaVu Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: font-url("DejaVuSansCondensed-Bold.eot");
+  src: font-url("DejaVuSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), font-url("DejaVuSansCondensed-Bold.woff2") format("woff2"), font-url("DejaVuSansCondensed-Bold.woff") format("woff"), font-url("DejaVuSansCondensed-Bold.ttf") format("truetype"), font-url("DejaVuSansCondensed-Bold.svg#DejaVuSans") format("svg");
+}
