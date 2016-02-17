@@ -1,8 +1,7 @@
-require "pul/assets/version"
+require "pul/assets/engine"
 
 module Pul
   module Assets
-    class Engine < Rails::Engine
-    end
+   
   end
 end
