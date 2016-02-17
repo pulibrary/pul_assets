@@ -5,3 +5,7 @@ table {
 th {
   text-align: left;
 }
+
+tr:nth-child(even) {
+  background: $light-gray;
+}
