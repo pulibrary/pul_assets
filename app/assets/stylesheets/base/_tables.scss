@@ -1,39 +1,73 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  border-bottom: solid 2px $gray-dark;
+  border: solid 1px $gray-light;
+
+  tr {
+    border: solid 1px $gray-light;
+  }
+
+  th,
+  td {
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  td {
+    word-break: keep-all;
+  }
 }
 
-thead {
+thead,
+.tablesorter-headerRow {
   background: $gray-dark;
   color: $white;
+  cursor: pointer;
 }
 
-th,
-td {
-  padding: 0.75rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-td {
-  word-break: keep-all;
-}
-
-// striping
-.table-striped tr:nth-child(even) {
+// Zebra table stripes
+.table--striped tr:nth-child(even),
+.tablesorter-default tr.even > td,
+.tablesorter-filter-row {
   background: $gray-lightest;
 }
 
-// bordered
-.table-bordered {
+.table--striped tr:nth-child(odd),
+.tablesorter-default tr.odd > td {
+  background: $white;
+}
+
+// Border around all cells
+.table--bordered {
+  tr {
+    border: 0;
+  }
+
   th,
   td {
     border: 1px solid $gray-light;
   }
 }
 
-// highlight row on hover
+// Highlight row on hover
 tr:hover td {
   background: $yellow-light;
+}
+
+// Filter for tablesorter plugin (https://github.com/themilkman/jquery-tablesorter-rails)
+.tablesorter-filter-row input {
+  margin: 0;
+  color: $black;
+}
+
+.tablesorter .filtered {
+  display: none;
+}
+
+// Hide input if filter for column is disabled
+.tablesorter input:disabled {
+  background: transparent;
+  border: 0;
+  cursor: initial;
 }
