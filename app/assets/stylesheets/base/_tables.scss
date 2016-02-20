@@ -51,7 +51,9 @@ thead,
 }
 
 // Highlight row on hover
-tr:hover td {
+tr:hover td,
+.tablesorter-default tr.odd:hover > td,
+.tablesorter-default tr.even:hover > td {
   background: $yellow-light;
 }
 
