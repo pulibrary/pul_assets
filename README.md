@@ -34,6 +34,11 @@ In your application.scss file, add:
 
     @import 'pul-assets';
 
+To render header and footer views partials, add where appropriate:
+
+	<%= render 'pul-assets/header' %>
+	<%= render 'pul-assets/footer' %>
+
 ## Development
 
 1. Update version number in `/lib/pul/assets/version.rb`
