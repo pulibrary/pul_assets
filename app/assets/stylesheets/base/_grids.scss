@@ -1,16 +1,4 @@
-$susy: (
-  output: float,
-  container: 1200px,
-  columns: 12,
-  gutters: 2/3,
-  global-box-sizing: border-box,
-  debug: (
-    image: hide,
-    color: rgba($orange, 0.25),
-    output: overlay,
-    toggle: top right,
-  ),
-);
+$susy: (output: float, container: 1200px, columns: 12, gutters: 2 / 3, global-box-sizing: border-box, debug: (image: hide, color: rgba($orange, 0.25), output: overlay, toggle: top right));
 
 *,
 *:before,
@@ -18,66 +6,10 @@ $susy: (
   box-sizing: border-box;
 }
 
-.l-region {
+.container {
   @include container;
 }
 
-.l-region--branding h2 {
-  @include span(12);
-
-  // @include breakpoint($tab) {
-  //   @include span(6);
-  // }
-}
-
-.l-region--branding .block--allsearch-block {
-  @include span(12);
-
-  // @include breakpoint($tab) {
-  //   @include span(last 4);
-  // }
-}
-
-.l-header,
-.l-footer,
-.wrapper {
-  @include clearfix;
-
-  margin: 0 auto;
-}
-
-.l-region--navigation,
-.l-region--highlighted,
-.l-region--highlighted,
-.l-main,
-.l-branding,
-.l-region--footer {
-  @include clearfix;
-
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.block--quicktabs-homepage-search-tabs {
-  clear: both;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.l-main {
-  padding: 1em;
-}
-
-.front .l-main {
-  // @include breakpoint($desk) {
-  //   padding: 0;
-  // }
-}
-
-.l-content {
-  padding: 0 1em;
-
-  // @include breakpoint($tab) {
-  //   padding: 0;
-  // }
+main {
+  padding-bottom: 2em;
 }

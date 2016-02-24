@@ -1,0 +1,44 @@
+.branding {
+  background-color: $gray-darkest;
+  border-top: 5px solid $orange;
+  min-height: 35px;
+
+  h2 {
+    margin: 0;
+  }
+
+  .site-name {
+    display: none;
+  }
+}
+
+.site-logo {
+  display: inline-block;
+  height: 35px;
+
+  &:hover {
+    background: none;
+  }
+
+  .logo-no-svg,
+  .logo-svg {
+    @include vertical-align;
+
+    height: 22px;
+    width: auto;
+  }
+}
+
+// SVG capable browser
+.svg {
+  .site-logo .logo-no-svg {
+    display: none;
+  }
+}
+
+// PNG fallback for older browsers
+.no-svg {
+  .site-logo .logo.svg {
+    display: none;
+  }
+}
