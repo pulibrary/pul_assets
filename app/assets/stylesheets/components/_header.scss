@@ -1,7 +1,9 @@
+$logo-height: 35px; // large = 50px; small = 35px;
+
 .branding {
   background-color: $gray-darkest;
   border-top: 5px solid $orange;
-  min-height: 35px;
+  min-height: $logo-height;
 
   h2 {
     margin: 0;
@@ -14,7 +16,7 @@
 
 .site-logo {
   display: inline-block;
-  height: 35px;
+  height: $logo-height;
 
   &:hover {
     background: none;
@@ -24,7 +26,7 @@
   .logo-svg {
     @include vertical-align;
 
-    height: 22px;
+    height: ($logo-height / 1.7);
     width: auto;
   }
 }

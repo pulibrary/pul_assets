@@ -1,0 +1,75 @@
+.navigation {
+  background: $gray-lightest;
+  border-bottom: 1px solid darken($gray-lightest, 5);
+  width: 100%;
+  z-index: 101;
+  position: relative;
+  overflow: visible;
+
+  a {
+    font-family: $font-serif;
+    font-size: 1.2em;
+    color: $gray-darkest;
+
+    &:visited {
+      color: $gray-darkest;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $orange;
+    }
+  }
+}
+
+.mobile-menu-button {
+  display: none;
+}
+
+.menu--main {
+  background: $gray-lightest;
+
+  ul li {
+    display: inline;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+  }
+
+  li a {
+    display: inline-block;
+    padding: 1rem;
+
+    &:hover {
+      background: none;
+    }
+  }
+
+  .expanded ul {
+    display: none;
+  }
+
+  .expanded:hover ul {
+    display: block;
+    background: $gray-lightest;
+    left: -2em;
+    position: absolute;
+    margin-left: 2em;
+    box-shadow: 0px 2px 5px $gray;
+    min-width: 200px;
+    overflow: auto;
+
+    li {
+      display: block;
+      white-space: nowrap;
+    }
+
+    li a {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      &:hover {
+        background: $gray-light;
+      }
+    }
+  }
+}
