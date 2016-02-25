@@ -1,3 +1,7 @@
+form {
+  margin-bottom: 2em;
+}
+
 input[type="search"]::-webkit-search-decoration {
   display: none;
 }
@@ -256,4 +260,8 @@ label,
   input {
     width: auto;
   }
+}
+
+.form-actions {
+  margin-top: 1em;
 }
