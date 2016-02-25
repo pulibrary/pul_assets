@@ -1,0 +1,46 @@
+$logo-height: 35px; // large = 50px; small = 35px;
+
+.branding {
+  background-color: $gray-darkest;
+  border-top: 5px solid $orange;
+  min-height: $logo-height;
+
+  h2 {
+    margin: 0;
+  }
+
+  .site-name {
+    display: none;
+  }
+}
+
+.site-logo {
+  display: inline-block;
+  height: $logo-height;
+
+  &:hover {
+    background: none;
+  }
+
+  .logo-no-svg,
+  .logo-svg {
+    @include vertical-align;
+
+    height: ($logo-height / 1.7);
+    width: auto;
+  }
+}
+
+// SVG capable browser
+.svg {
+  .site-logo .logo-no-svg {
+    display: none;
+  }
+}
+
+// PNG fallback for older browsers
+.no-svg {
+  .site-logo .logo.svg {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+a.skip-main {
+  position: absolute;
+  left: -1000px;
+  top: -1000px;
+  width: 1px;
+  height: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+
+a.skip-main:focus,
+a.skip-main:active,
+a.skip-main:hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  background-color: $orange;
+  padding: 1em;
+}
