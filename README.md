@@ -5,10 +5,6 @@ Gem of resuable PUL JS, Sass, graphics, etc. for Rails apps.
 ## Installation
 
 Add this line to your application's Gemfile:
-
-	gem 'pul-assets' # pulls latest build from Rubygems
-
-or to pull latest master branch of pul_assets repo:
 	
 	gem 'pul-assets', :git => 'git@github.com:pulibrary/pul_assets.git', :branch => :master # pulls latest master branch of pul_assets repo
 
@@ -22,6 +18,7 @@ Or install it yourself as:
 
 Dependencies to include in your Gemfile:
 
+	gem 'modernizr-rails'
 	gem 'normalize-rails'
 	gem 'susy'
 	gem 'breakpoint'
@@ -34,13 +31,34 @@ In your application.scss file, add:
 
     @import 'pul-assets';
 
+In your application.js file, add:
+
+	//= require jquery-tablesorter
+	//= require jquery-tablesorter/jquery.tablesorter.combined
+	//= require jquery-tablesorter/widgets/widget-uitheme
+	//= require pul-assets
+
 To render header and footer views partials, add where appropriate:
 
 	<%= render 'pul-assets/header' %>
 	<%= render 'pul-assets/footer' %>
 
-## Development
+To include the PU Library favicon, add to the application layout's head element: 
 
-1. Update version number in `/lib/pul/assets/version.rb`
-2. Make sure repo has latest codebase
-3. run `rake build` and `rake release` to update gem in Rubygems
+	<%= favicon_link_tag 'favicon.ico' %>
+
+To invoke tablesorter plugin:
+
+	/* In a js file, include the following to apply the plugin to all tables. 
+	 * Change the selector to id of element to be more specific. 
+	 * stickyHeaders widget makes the table header appear always on top
+	 * filter widget allows search/filter of column contents
+	 * zebra widget allows striping of rows
+	 */
+	$("table").tablesorter({
+		widthFixed: true,
+		widgets: ['stickyHeaders', 'filter', 'zebra'],	
+	});
+
+	<!-- In the view with table element, add the class "tablesorter" -->
+	<table class="tablesorter">
