@@ -39,6 +39,7 @@ In your application.js file, add:
 	//= require pul-assets
 
 To render layout partials, add header justafter opening body tag, and footer just before closing body tag:
+```
 	...
 	<body>
 	<%= render 'pul-assets/header' %>
@@ -46,6 +47,8 @@ To render layout partials, add header justafter opening body tag, and footer jus
 	<%= render 'pul-assets/footer' %>
 	</body>
 	...
+```
+
 To include the PU Library favicon, add to the application layout's head element: 
 
 	<%= favicon_link_tag 'favicon.ico' %>
