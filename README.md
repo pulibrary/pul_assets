@@ -5,7 +5,7 @@ Gem of resuable PUL JS, Sass, graphics, etc. for Rails apps.
 ## Installation
 
 Add this line to your application's Gemfile:
-	
+
 	gem 'pul-assets', :git => 'git@github.com:pulibrary/pul_assets.git', :branch => :master # pulls latest master branch of pul_assets repo
 
 And then execute:
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    gem install pul-assets 
+    gem install pul-assets
 
 Dependencies to include in your Gemfile:
 
@@ -38,7 +38,8 @@ In your application.js file, add:
 	//= require jquery-tablesorter/widgets/widget-uitheme
 	//= require pul-assets
 
-To render layout partials, add header justafter opening body tag, and footer just before closing body tag:
+To render layout partials, add header just after opening body tag, and footer just before closing body tag:
+
 ```
 	...
 	<body>
@@ -55,15 +56,15 @@ To include the PU Library favicon, add to the application layout's head element:
 
 To invoke tablesorter plugin:
 
-	/* In a js file, include the following to apply the plugin to all tables. 
-	 * Change the selector to id of element to be more specific. 
+	/* In a js file, include the following to apply the plugin to all tables.
+	 * Change the selector to id of element to be more specific.
 	 * stickyHeaders widget makes the table header appear always on top
 	 * filter widget allows search/filter of column contents
 	 * zebra widget allows striping of rows
 	 */
 	$("table").tablesorter({
 		widthFixed: true,
-		widgets: ['stickyHeaders', 'filter', 'zebra'],	
+		widgets: ['stickyHeaders', 'filter', 'zebra'],
 	});
 
 	<!-- In the view with table element, add the class "tablesorter" -->
