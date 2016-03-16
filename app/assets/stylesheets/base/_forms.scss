@@ -17,7 +17,7 @@ textarea {
 
   &:focus {
     box-shadow: none;
-    border: solid 1px $orange;
+    border: solid 1px $secondary-color;
     z-index: 1;
   }
 }
@@ -38,7 +38,7 @@ input[type="submit"],
 input[type="button"] {
   -webkit-appearance: none;
   border-radius: 4px;
-  background: $blue-dark;
+  background: $primary-color;
   background-clip: padding-box;
   border: 1px solid $gray-light;
   cursor: pointer;
@@ -116,12 +116,12 @@ input[type="week"] {
   font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
 
   &[disabled] {
-    background-color: $gray-lightest;
+    background-color: $tertiary-color;
   }
 
   &:focus {
     box-shadow: none;
-    border: solid 1px $orange;
+    border: solid 1px $secondary-color;
     z-index: 1;
   }
 }
@@ -264,4 +264,9 @@ label,
 
 .form-actions {
   margin-top: 1em;
+}
+
+// bootstrap
+.input-group .form-control {
+  margin: 0;
 }

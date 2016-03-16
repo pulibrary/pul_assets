@@ -1,4 +1,4 @@
-$susy: (output: float, container: 1200px, columns: 12, gutters: 2 / 3, global-box-sizing: border-box, debug: (image: hide, color: rgba($orange, 0.25), output: overlay, toggle: top right));
+$susy: (output: float, container: 1200px, columns: 12, gutters: 2 / 3, global-box-sizing: border-box, debug: (image: hide, color: rgba($secondary-color, 0.25), output: overlay, toggle: top right));
 
 *,
 *:before,
@@ -11,5 +11,5 @@ $susy: (output: float, container: 1200px, columns: 12, gutters: 2 / 3, global-bo
 }
 
 main {
-  padding-bottom: 2em;
+  padding: 1em 0 2em 0;
 }

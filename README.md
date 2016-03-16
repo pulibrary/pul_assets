@@ -27,8 +27,26 @@ Dependencies to include in your Gemfile:
 
 ## Usage
 
+In your application.html.erb file, add `<%= javascript_include_tag :modernizr %>`:
+
+	<html>
+	<head>
+	  <title>Your Awesome App</title>
+	  <%= stylesheet_link_tag    :application, media: :all %>
+	  <%= javascript_include_tag :modernizr %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+	  ...
+	  <%= javascript_include_tag :application %>
+	</body>
+	</html>
+
 In your application.scss file, add:
 
+	*= require normalize-rails
+	*= require_self
+	
     @import 'pul-assets';
 
 In your application.js file, add:

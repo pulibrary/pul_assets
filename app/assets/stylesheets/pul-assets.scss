@@ -1,7 +1,7 @@
 @import "bourbon";
 @import "susy";
 
-@import "utils/variables--bootstrap"; // use for bootstrap projects
+// @import "utils/variables__bootstrap"; // use for bootstrap projects
 @import "utils/variables";
 @import "utils/mixins";
 @import "utils/helpers";
@@ -22,3 +22,7 @@
 @import "components/menu";
 @import "components/footer";
 @import "components/footer--sticky";
+
+//bootstrap
+@import "components/header_navbar";
+@import "components/header_masthead";
