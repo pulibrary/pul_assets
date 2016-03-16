@@ -1,3 +1,9 @@
+require "modernizr-rails"
+require "normalize-rails"
+require "bourbon"
+require "breakpoint"
+require "jquery-tablesorter"
+
 require "pul/assets/version"
 
 module Pul

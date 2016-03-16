@@ -6,7 +6,7 @@ Gem of resuable PUL JS, Sass, graphics, etc. for Rails apps.
 
 Add this line to your application's Gemfile:
 
-	gem 'pul-assets', :git => 'git@github.com:pulibrary/pul_assets.git', :branch => :master # pulls latest master branch of pul_assets repo
+	gem 'pul-assets', github: 'pulibrary/pul_assets' # pulls latest master branch of pul_assets repo
 
 And then execute:
 
@@ -15,15 +15,6 @@ And then execute:
 Or install it yourself as:
 
     gem install pul-assets
-
-Dependencies to include in your Gemfile:
-
-	gem 'modernizr-rails'
-	gem 'normalize-rails'
-	gem 'susy'
-	gem 'breakpoint'
-	gem 'bourbon'
-	gem 'jquery-tablesorter'
 
 ## Usage
 
