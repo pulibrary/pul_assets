@@ -1,0 +1,45 @@
+.image-masthead,
+.masthead {
+  .navbar {
+  background-color: $tertiary-color;
+  }
+
+  .h1 {
+  font-family: $font-secondary;
+  letter-spacing: 0.04em;
+  }
+
+  .background-container-gradient {
+    background:
+     linear-gradient(
+       rgba($gray-darkest, 0.35),
+       rgba($gray-darkest, 0.5),
+       rgba($gray-darkest, 0.65),
+       rgba($gray-darkest, 0.5)
+     );
+    height: 100%;
+  }
+}
+
+.image-masthead .navbar .navbar-nav > li > a,
+.masthead .navbar .navbar-nav > li > a,
+.image-masthead .navbar .navbar-nav > .active > a {
+  color: $black;
+  font-family: $font-secondary;
+  text-transform: capitalize;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: $black;
+    background: $gray-light;
+  }
+}
+
+.image-masthead .navbar .navbar-nav > .active > a {
+  background: $gray-light;
+}
+
+.masthead {
+  background-color: $tertiary-color;
+}

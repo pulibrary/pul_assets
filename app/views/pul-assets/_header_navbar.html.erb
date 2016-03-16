@@ -1,0 +1,22 @@
+<a class="skip-main" href="#main-content">Skip to main content</a>
+<div class="wrapper">
+  <header role="banner">
+    <div class="branding">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#user-util-collapse">
+          <span class="sr-only"><%= t :toggle_nav %></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <h2><a href="https://library.princeton.edu" title="Princeton University Library - Home" class="site-logo">
+        <%= image_tag "library_full_logo.svg", class: "logo-svg", alt: "Princeton University Library" %>
+        <%= image_tag "library_full_logo.png", class: "logo-no-svg", alt: "Princeton University Library" %></a></h2>
+        </div>
+
+        <div class="collapse navbar-collapse" id="user-util-collapse">
+          <%= render :partial=>'/user_util_links' %>
+        </div>
+      </div>
+    </div>
