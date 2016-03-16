@@ -47,6 +47,10 @@ In your application.js file, add:
 	//= require jquery-tablesorter/widgets/widget-uitheme
 	//= require pul-assets
 
+In your application.rb file, add:
+
+	require 'susy'
+
 To render layout partials, add header just after opening body tag, and footer just before closing body tag:
 
 	```
