@@ -1,7 +1,25 @@
+.page-title {
+  margin-top: 0;
+}
+
 .page-header {
   display: block;
 
   small {
     font-size: 1.2rem;
   }
+}
+
+#sidebar ol.sidenav > li > h4 {
+  margin-top: 0;
+}
+
+#sidebar ol.sidenav > li.active > h4 {
+  font-weight: bold;
+}
+
+#sidebar ol.sidenav > li a:hover,
+#sidebar ol.sidenav > li a:focus {
+  background: none;
+  text-decoration: underline;
 }

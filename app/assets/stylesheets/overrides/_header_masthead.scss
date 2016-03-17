@@ -4,6 +4,16 @@
   background-color: $tertiary-color;
   }
 
+  .dropdown-menu {
+    background-color: $tertiary-color;
+    font-family: $font-secondary;
+
+    > li > a:hover,
+    > li > a:focus {
+      background-color: $gray-light;
+    }
+  }
+
   .h1 {
   font-family: $font-secondary;
   letter-spacing: 0.04em;

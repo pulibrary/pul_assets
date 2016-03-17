@@ -1,6 +1,7 @@
-
+$tertiary-color: #f5f4f1;
 
 // Override Bootstrap variables here
 // Add @import "variables__bootstrap"; on first line in application.scss file
 
-$breadcrumb-bg: #f5f4f1;
+$breadcrumb-bg: $tertiary-color;
+$table-bg-accent: $tertiary-color;
