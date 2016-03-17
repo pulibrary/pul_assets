@@ -3,3 +3,12 @@ media {
   max-width: 100%;
   height: auto;
 }
+
+figure {
+  margin: 2em;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
