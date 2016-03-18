@@ -27,3 +27,12 @@
   background: none;
   text-decoration: underline;
 }
+
+dt:after {
+  content: none;
+}
+
+.dl-horizontal dt {
+  overflow: visible;
+  white-space: initial;
+}
