@@ -1,0 +1,40 @@
+.search-widgets {
+  display: inline-block;
+
+  .btn {
+    margin-right: 0.5em;
+  }
+}
+
+.show__nav {
+  float: right;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    @extend .btn;
+  }
+}
+
+.bookmark_toggle {
+  margin-bottom: 0;
+
+  > .toggle_bookmark {
+    padding: 0;
+    margin: 0;
+  }
+
+  label {
+    @extend .btn;
+    text-align: center;
+    margin-top: 0;
+
+    input {
+      display: none;
+    }
+  }
+}
+
+
