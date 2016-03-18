@@ -1,6 +1,15 @@
+$tertiary-color: #f5f4f1;
+$yellow-light: #fee7ba;
+$gray-dark: #666d78;
+
 // Override Bootstrap variables here
 // Add @import "variables__bootstrap"; on first line in application.scss file
 
-$bootstrap-sass-asset-helper: false !default;
-
-
+$breadcrumb-bg: $tertiary-color;
+$table-bg-accent: $tertiary-color;
+$thumbnail-border: $tertiary-color;
+$thumbnail-border-radius: 0;
+$thumbnail-padding: 0.5rem;
+$list-group-hover-bg: $yellow-light;
+$list-group-active-bg: $gray-dark;
+$list-group-active-border: $gray-dark;

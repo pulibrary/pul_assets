@@ -1,0 +1,80 @@
+.search-widgets {
+  display: block;
+  text-align: center;
+
+  @include breakpoint($bp-med-2) {
+    display: inline-block;
+    text-align: initial;
+  }
+
+  .btn {
+    margin-right: 0.5em;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.page_links {
+  display: block;
+  text-align: center;
+  padding: 1em;
+
+  @include breakpoint($bp-med-2) {
+    display: inline-block;
+    text-align: initial;
+    padding: 0;
+  }
+}
+
+.show__nav {
+  text-align: center;
+
+  @include breakpoint($bp-med-2) {
+    float: right;
+    text-align: initial;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 0.5em;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  a {
+    @extend .btn;
+  }
+}
+
+.show__nav .bookmark_toggle {
+  margin-bottom: 0;
+
+  > .toggle_bookmark {
+    padding: 0;
+    margin: 0;
+  }
+
+  label {
+    @extend .btn;
+    text-align: center;
+    margin-top: 0;
+
+    input {
+      display: none;
+    }
+  }
+}
+
+#sortAndPerPage,
+.pagination-search-widgets {
+  border: 0;
+}
+
+.blacklight-catalog-edit #document,
+.blacklight-catalog-show #document {
+  margin: 0;
+}

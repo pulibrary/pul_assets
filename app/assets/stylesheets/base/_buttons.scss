@@ -1,3 +1,26 @@
 .button.pull-right {
   margin-top: 2.3rem;
 }
+
+.btn + .btn {
+  margin-right: 1em;
+}
+
+.btn {
+  background: $tertiary-color;
+  border: 1px solid $gray-light;
+  color: $black;
+
+  &:hover,
+  &:focus,
+  &-primary {
+    background: $primary-color;
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+  }
+}
+

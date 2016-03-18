@@ -1,0 +1,64 @@
+// bootstrap overrides for _header_navbar.html.erb
+.branding .navbar-nav > li > a {
+  padding: 7px 15px 8px;
+  font-size: 11px;
+  color: $off-white;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.branding .dropdown-menu > li > a:hover,
+.branding .dropdown-menu > li > a:focus {
+  background: $blue;
+  color: $white;
+}
+
+.branding .dropdown-menu .divider {
+  margin: 0;
+}
+
+.navbar-toggle,
+.facets-toggle {
+  border: 1px solid $white;
+
+  .icon-bar {
+    background: $white;
+  }
+}
+
+.site-logo {
+  display: none;
+
+  @include breakpoint($bp-small-2) {
+    height: 51px;
+    display: inline-block;
+  }
+
+  @include breakpoint($bp-med-2) {
+    height: 35px;
+  }
+}
+
+.masthead .site-title {
+  white-space: initial;
+
+  @include breakpoint($bp-med-2) {
+    white-space: nowrap;
+  }
+}
+
+.site-title-container {
+  max-height: initial;
+
+  @include breakpoint($bp-med-2) {
+    max-height: 130px;
+  }
+}

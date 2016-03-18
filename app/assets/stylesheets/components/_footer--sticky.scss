@@ -16,7 +16,9 @@ html, body {
 }
 
 .footer, .wrapper:after {
-  height: $footer-height;
+  @include breakpoint($bp-med-2) {
+    height: $footer-height;
+  }
 }
 
 .footer {

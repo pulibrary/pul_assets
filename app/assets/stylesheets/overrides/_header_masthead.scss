@@ -4,6 +4,16 @@
   background-color: $tertiary-color;
   }
 
+  .dropdown-menu {
+    background-color: $tertiary-color;
+    font-family: $font-secondary;
+
+    > li > a:hover,
+    > li > a:focus {
+      background-color: $gray-light;
+    }
+  }
+
   .h1 {
   font-family: $font-secondary;
   letter-spacing: 0.04em;
@@ -27,6 +37,7 @@
   color: $black;
   font-family: $font-secondary;
   text-transform: capitalize;
+  background: none;
 
   &:active,
   &:hover,
@@ -42,4 +53,10 @@
 
 .masthead {
   background-color: $tertiary-color;
+}
+
+.search-query-form {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  border: 0;
 }

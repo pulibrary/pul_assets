@@ -3,3 +3,71 @@ media {
   max-width: 100%;
   height: auto;
 }
+
+figure {
+  margin: 2em;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border: 1px solid $tertiary-color;
+    background-color: $white;
+  }
+}
+
+iframe {
+  display: block;
+  margin: 0 auto 1em;
+  max-width: 100%;
+}
+
+// sir trevor and spotlight override
+.st__content-block,
+.content-block {
+  margin: 1.5em 0;
+}
+
+.browse-category,
+.browse-landing .category .image-overlay {
+  border: 1px solid $tertiary-color;
+}
+
+.browse-category,
+.browse-landing .category .image-overlay,
+.browse-landing .category .text-overlay {
+  border-radius: 6px;
+  box-shadow: inset 0 0 1px 250px rgba($black,0.6);
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+#documents.slideshow .grid .document .thumbnail a > img {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+.carousel {
+  background: $black;
+}
+
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  margin: 0 auto;
+}
+
+.item-grid-block .items-col .box .thumbnail a > img {
+  border-color: $tertiary-color;
+}
+
+#slideshow-modal .modal-dialog .modal-content {
+  background-color: $black;
+}
+
+#slideshow .caption {
+  color: $gray-light;
+}

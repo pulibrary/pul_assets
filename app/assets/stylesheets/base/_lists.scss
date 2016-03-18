@@ -23,3 +23,32 @@ dd {
   margin: 0 0 0 ($term-width + 10px);
   padding: 0 0 0.5em 0;
 }
+
+// sir trevor
+.st__content-block--list ul {
+  list-style-type: disc;
+  margin-bottom: 1.5em;
+
+  li {
+    margin-left: 1.5em;
+  }
+}
+
+.item-features .carousel-indicators li {
+  border: 1px solid $tertiary-color;
+}
+
+.list-group .list-group-item {
+  a {
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $yellow-light;
+  }
+}
+
+.list-striped li:nth-child(odd) {
+  background-color: $tertiary-color;
+}
