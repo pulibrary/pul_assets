@@ -32,7 +32,17 @@ dt:after {
   content: none;
 }
 
-.dl-horizontal dt {
-  overflow: visible;
-  white-space: initial;
+.dl-horizontal {
+  dt {
+    overflow: visible;
+    white-space: initial;
+  }
+
+  dd {
+    word-break: break-all;
+  }
+}
+
+#document h1 {
+  margin-top: 0;
 }

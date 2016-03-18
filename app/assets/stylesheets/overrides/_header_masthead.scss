@@ -54,3 +54,9 @@
 .masthead {
   background-color: $tertiary-color;
 }
+
+.search-query-form {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  border: 0;
+}
