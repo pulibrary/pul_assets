@@ -6,7 +6,7 @@ Gem of resuable PUL JS, Sass, graphics, etc. for Rails apps.
 
 Add this line to your application's Gemfile:
 
-	gem 'pul-assets', github: 'pulibrary/pul_assets' # pulls latest master branch of pul_assets repo
+	gem 'pul-assets', :git => 'git@github.com:pulibrary/pul_assets.git', :branch => :master # pulls latest master branch of pul_assets repo
 
 And then execute:
 
@@ -36,9 +36,9 @@ In your application.html.erb file, add `<%= javascript_include_tag :modernizr %>
 In your application.scss file, add:
 
 	*= require normalize-rails
+	*= require pul-assets
 	*= require_self
-	
-    @import 'pul-assets';
+	*= require_tree .
 
 In your application.js file, add:
 
@@ -46,14 +46,15 @@ In your application.js file, add:
 	//= require jquery-tablesorter/jquery.tablesorter.combined
 	//= require jquery-tablesorter/widgets/widget-uitheme
 	//= require pul-assets
+	//= require_tree .
 
 In your application.rb file, add:
 
 	require 'susy'
+	require 'breakpoint'
 
 To render layout partials, add header just after opening body tag, and footer just before closing body tag:
 
-	```
 		...
 		<body>
 		<%= render 'pul-assets/header' %>
@@ -61,11 +62,10 @@ To render layout partials, add header just after opening body tag, and footer ju
 		<%= render 'pul-assets/footer' %>
 		</body>
 		...
-	```
 
 To include the PU Library favicon, add to the application layout's head element:
 
-	<%= favicon_link_tag 'favicon.ico' %>
+	<%= favicon_link_tag %>
 
 To invoke tablesorter plugin:
 
