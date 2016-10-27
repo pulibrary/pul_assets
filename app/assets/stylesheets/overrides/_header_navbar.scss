@@ -1,64 +1,99 @@
-// bootstrap overrides for _header_navbar.html.erb
-.branding .navbar-nav > li > a {
-  padding: 7px 15px 8px;
-  font-size: 11px;
-  color: $off-white;
-
-  &:active,
-  &:focus,
-  &:hover {
-    background: none;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.branding .dropdown-menu > li > a:hover,
-.branding .dropdown-menu > li > a:focus {
-  background: $blue;
-  color: $white;
-}
-
-.branding .dropdown-menu .divider {
-  margin: 0;
-}
-
-.navbar-toggle,
-.facets-toggle {
-  border: 1px solid $white;
-
-  .icon-bar {
-    background: $white;
-  }
-}
-
-.site-logo {
-  display: none;
-
-  @include breakpoint($bp-small-2) {
-    height: 51px;
+.navbar-form,
+.navbar-right {
     display: inline-block;
-  }
-
-  @include breakpoint($bp-med-2) {
-    height: 35px;
-  }
 }
 
-.masthead .site-title {
-  white-space: initial;
-
-  @include breakpoint($bp-med-2) {
-    white-space: nowrap;
-  }
+.navbar-right {
+    float: right;
+    margin-right: 1em;
 }
 
-.site-title-container {
-  max-height: initial;
+#sidebar,
+#content {
+    float: left;
+    position: relative;
+    padding: 0 1em;
+}
 
-  @include breakpoint($bp-med-2) {
-    max-height: 130px;
-  }
+#sidebar {
+    width: 33%;
+}
+
+#content {
+    width: 66%;
+}
+
+.facets-toggle {
+  display: none;
+}
+
+.facets-heading {
+  margin: 1em 0 0.5em;
+  font-size: 1.2em;
+}
+
+.panel-default {
+  margin-bottom: 0.5em;
+    .panel-heading,
+    .panel-body {
+        border: 1px solid $gray-light;
+        padding: 0.7em 1em;
+    }
+
+    .panel-heading {
+      cursor: pointer;
+      background: $tertiary-color;
+    }
+
+    .panel-title {
+      font-size: 1em;
+      margin: 0;
+      a {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+
+    .panel-body {
+      border-top: 0;
+    }
+
+    .collapse {
+      display: none;
+
+      &.in      { display: block; }
+      // [converter] extracted tr&.in to tr.collapse.in
+      // [converter] extracted tbody&.in to tbody.collapse.in
+    }
+
+    tr.collapse.in    { display: table-row; }
+
+    tbody.collapse.in { display: table-row-group; }
+
+    .collapsing {
+      position: relative;
+      height: 0;
+      overflow: hidden;
+      transition-property: height, visibility;
+      transition-duration: .35s;
+      transition-timing-function: ease;
+    }
+
+    .more_facets_link {
+      margin-top: 1em;
+    }
+}
+
+.search-widgets {
+  .btn-group {
+  float: left;
+  font-weight: normal;
+}
+.btn-group ~ .btn-group {
+  margin-left: 6px;
+}
+}
+
+.twitter-typeahead input {
+  padding: 5px 10px;
 }

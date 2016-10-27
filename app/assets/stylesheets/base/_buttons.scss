@@ -10,6 +10,23 @@
   background: $tertiary-color;
   border: 1px solid $gray-light;
   color: $black;
+  border-radius: 4px;
+  background-clip: padding-box;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  overflow: visible;
+  margin: 0;
+  padding: 0.7em 1em;
+  text-shadow: 0;
+  text-decoration: none;
+  vertical-align: top;
+  // width: auto;
+  line-height: 1;
+
+  // Helvetica Neue present, because it works better
+  // for line-height on buttons than Arial, on OS X.
+  font-family: $font-sans; //"Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
 
   &:hover,
   &:focus,
@@ -23,4 +40,3 @@
     border-color: $primary-color;
   }
 }
-

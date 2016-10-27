@@ -20,12 +20,6 @@
 @import "components/skip-main";
 @import "components/header";
 @import "components/menu";
+@import "components/pagination";
 @import "components/footer";
 @import "components/footer--sticky";
-
-// bootstrap overrides
-@import "overrides/header_navbar";
-@import "overrides/header_masthead";
-@import "overrides/tabs";
-@import "overrides/typography";
-@import "overrides/show_nav";

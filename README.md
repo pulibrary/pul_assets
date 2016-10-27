@@ -44,7 +44,6 @@ In your application.js file, add:
 
 	//= require jquery-tablesorter
 	//= require jquery-tablesorter/jquery.tablesorter.combined
-	//= require jquery-tablesorter/widgets/widget-uitheme
 	//= require pul-assets
 	//= require_tree .
 
@@ -66,6 +65,18 @@ To render layout partials, add header just after opening body tag, and footer ju
 To include the PU Library favicon, add to the application layout's head element:
 
 	<%= favicon_link_tag %>
+
+###Blacklight overrides
+
+Styles: Remove or comment out the imports that come default in the blacklight.scss file under `app/assets/stylesheets`. In addition to the steps above, include the following: 
+
+	@import "pul-assets__blacklight";
+
+Views: Use modified blacklight partials by using the layout partials in the `views/blacklight/` directory. For example:
+
+	<%= render 'pul-assets/blacklight/header_navbar' %>
+
+###Plugins
 
 To invoke tablesorter plugin:
 

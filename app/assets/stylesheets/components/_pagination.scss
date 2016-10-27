@@ -1,0 +1,39 @@
+.pagination {
+
+    text-align: center;
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+    }
+
+    li a {
+      background: #f6f6f6;
+    }
+
+    li a,
+    li span {
+        border-radius: 3px;
+        border: 1px solid gainsboro;
+        color: #333;
+        outline: none;
+        padding: 0.375em 0.809em;
+        text-decoration: none;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+        &:hover,
+        &:focus {
+        }
+        &:active {
+        }
+    }
+
+    li span,
+    .disabled a {
+      background: transparent;
+      cursor: not-allowed;
+    }
+}
