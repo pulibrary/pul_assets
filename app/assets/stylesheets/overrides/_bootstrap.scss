@@ -1,0 +1,144 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+#header-navbar {
+    height: 75px; // change as needed
+    .navbar-brand,
+    .navbar-form,
+    .navbar-right {
+        @include vertical-align();
+    }
+}
+
+$logo_image: 'blacklight/logo.png' !default;
+.navbar-brand {
+    /* The main logo image for the Blacklight instance */
+    width: 150px;
+    height: 50px;
+    background: transparent image_url($logo_image) no-repeat top left;
+    display: inline-block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    float: left;
+}
+
+.navbar-form {
+    margin: 0 1em 0;
+    select {
+        margin: 0;
+    }
+}
+
+.navbar-right {
+    width: 25%;
+    .navbar-nav {
+        float: left;
+        li {
+            display: inline;
+            list-style-type: none;
+            padding-right: 20px;
+        }
+    }
+}
+
+.search-query-form {
+    z-index: 1;
+    .input-group {
+        width: 100%;
+    }
+    .input-group-addon {
+        &.for-search-field {
+            width: 15ch;
+        }
+    }
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+.facet-count {
+    float: right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-sans;
+}
+
+.twitter-typeahead input {
+    margin: 0;
+}
+
+.page_links {
+    display: inline-block;
+    margin-top: 0.7em;
+}
+
+.constraints-container {
+    margin-bottom: 1em;
+}
+
+.bookmark_toggle {
+    margin: 0;
+
+    label {
+      font-weight: normal;
+      margin: 0;
+      cursor: pointer;
+    }
+}
+
+.btn-group {
+  position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0;
+
+      .btn {
+        font-size: 14px;
+        height: 35px;
+      }
+}
+
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-group>.btn:last-child:not(:first-child) {
+  border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      border-left: 0;
+
+      &:hover {
+        text-decoration: none;
+        background: $red-dark;
+      }
+
+      &.remove {
+        height: 35px;
+      }
+
+      .glyphicon-remove:after {
+        content: "x";
+        text-decoration: none;
+      }
+
+}
