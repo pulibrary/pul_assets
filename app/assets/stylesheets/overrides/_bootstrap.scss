@@ -19,6 +19,7 @@
 }
 
 $logo_image: 'blacklight/logo.png' !default;
+
 .navbar-brand {
     /* The main logo image for the Blacklight instance */
     width: 150px;
@@ -42,7 +43,6 @@ $logo_image: 'blacklight/logo.png' !default;
 }
 
 .navbar-right {
-    width: 25%;
     .navbar-nav {
         float: left;
         li {
@@ -103,14 +103,22 @@ h6 {
 
 .btn-group {
   position: relative;
-      display: inline-block;
-      vertical-align: middle;
-      font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
 
-      .btn {
-        font-size: 14px;
-        height: 35px;
-      }
+  .btn {
+    font-size: 14px;
+    height: 35px;
+    text-decoration: none;
+
+    &.active:hover {
+      background-color: $tertiary-color;
+      border: 1px solid #e0ddd3;
+      color: $black;
+      cursor: not-allowed;
+    }
+  }
 }
 
 .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
@@ -120,21 +128,52 @@ h6 {
 
 .btn-group>.btn:last-child:not(:first-child) {
   border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
-      border-left: 0;
+  border-top-left-radius: 0;
+}
 
-      &:hover {
-        text-decoration: none;
-        background: $red-dark;
-      }
+.constraint-value.btn:hover,
+.constraints-value.btn:focus {
+  background: $tertiary-color;
+  color: $black;
+  border: 1px solid #e0ddd3;
+}
 
-      &.remove {
-        height: 35px;
-      }
+.constraint > .btn:last-child:not(:first-child) {
+  &:hover {
+    text-decoration: none;
+    background: $red-dark;
+  }
 
-      .glyphicon-remove:after {
-        content: "x";
-        text-decoration: none;
-      }
+  &.remove {
+    height: 35px;
+  }
 
+  .glyphicon-remove:after {
+    content: "x";
+    text-decoration: none;
+  }
+}
+
+.prev_next_links {
+  .disabled,
+  .disabled:hover,
+  .disabled:focus {
+    color: $gray-light;
+    background-color: $white;
+    border: 1px solid #e0ddd3;
+    cursor: not-allowed;
+  }
+}
+
+.sort_options .active {
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.125)
+}
+
+.appliedFilter .constraint-value {
+  cursor: default;
+  border-right: 0;
+}
+
+.appliedFilter .filterName:after {
+  content: ":";
 }

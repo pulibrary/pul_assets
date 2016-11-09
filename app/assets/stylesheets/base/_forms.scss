@@ -7,7 +7,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 input,
-button,
+// button,
 a.button,
 select,
 textarea {
@@ -31,7 +31,7 @@ input[type="checkbox"] {
   }
 }
 
-button,
+// button,
 a.button,
 input[type="reset"],
 input[type="submit"],
@@ -106,8 +106,8 @@ input[type="week"] {
   color: black;
   outline: 0;
   margin: 6px 0 4px;
-  padding: 0.7em 1em;
-  line-height: 1;
+  padding: 0.5em 0.7em;
+  line-height: 1.4rem;
   text-align: left;
   font-size: 13px;
   width: 100%;
@@ -162,16 +162,19 @@ a.button_disabled {
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: $gray;
+  line-height: 1.4rem;
 }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: $gray-light;
+  line-height: 1.4rem;
 }
 
 input.placeholder_text,
 textarea.placeholder_text {
   color: $gray-light;
+  line-height: 1.4rem;
 }
 
 textarea,
@@ -252,7 +255,8 @@ optgroup {
 }
 
 label,
-.form-label {
+.form-label,
+.field_head {
   display: inline-block;
   font-weight: 700;
   margin-top: 1em;
@@ -407,4 +411,12 @@ label,
   .custom-select::after {
     display: block;
   }
+}
+
+.select2-container {
+  margin-top: 6px;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: 1px solid $secondary-color;
 }

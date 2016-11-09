@@ -90,3 +90,22 @@ $max-width: 72em;
 
 $rwd-tables: max-width 1000px;
 
+$zindex-modal: 1050;
+$modal-content-bg: $white;
+$modal-content-fallback-border-color: #999;
+$modal-content-border-color: rgba(0,0,0,.2);
+$border-radius-large: 6px;
+$modal-backdrop-opacity: .5;
+$zindex-modal-background: 1040;
+$modal-backdrop-bg: $black;
+$modal-title-padding: 15px;
+$modal-header-border-color: #e5e5e5;
+$modal-title-line-height: $base-line-height;
+$modal-inner-padding: 15px;
+$modal-footer-border-color: $modal-header-border-color;
+
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$modal-lg: 75%;
+$modal-md: 85%;
+$modal-sm: 95%;

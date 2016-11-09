@@ -13,10 +13,11 @@ body {
 }
 
 p {
-  margin-bottom: 1.3em;
+  margin-top: 1.3em;
 
-  &:first-child {
+  &:first-of-type {
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
 

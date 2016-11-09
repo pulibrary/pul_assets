@@ -6,14 +6,17 @@
         <h2><a href="https://library.princeton.edu" title="Princeton University Library - Home" class="site-logo">
         <%= image_tag "library_full_logo.svg", class: "logo-svg", alt: "Princeton University Library" %>
         <%= image_tag "library_full_logo.png", class: "logo-no-svg", alt: "Princeton University Library" %></a></h2>
+        <ul class="menu--user">
+          <%= render :partial=>'pul-assets/blacklight/account' unless params[:action] == 'error' %>
+        </ul>
       </div>
     </div>
     <div class="navigation">
       <div class="container">
         <div id="header-navbar" class="navbar navbar-static-top" role="navigation">
             <%= link_to application_name, root_path, class: "navbar-brand" %>
-            <%= render_search_bar  %>
-            <%= render :partial=>'/user_util_links' %>
+            <%= render :partial => 'pul-assets/blacklight/catalog/search_form' %>
+            <%= render :partial => 'pul-assets/blacklight/user_util_links' %>
         </div>
       </div>
     </div>

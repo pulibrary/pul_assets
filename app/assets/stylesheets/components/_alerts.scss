@@ -1,0 +1,50 @@
+/* HTML
+<div class="alert alert--warning" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">×</span>
+  </button>
+  <p>Access to these data files is restricted to currently enrolled/employed members of Princeton University</p>
+</div>
+*/
+
+.alert {
+  border-radius: $base-border-radius;
+  color: $black;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+
+  &--danger {
+    background-color: $red-light;
+  }
+
+  &--warning {
+    background-color: $yellow-light;
+  }
+
+  &--success {
+    background-color: $green-light;
+  }
+
+  &--info {
+    background-color: $blue-light;
+  }
+}
+
+.close {
+  background: transparent;
+  border: 0;
+  color: $black;
+  float: right;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  opacity: .2;
+  position: relative;
+  right: -.25rem;
+  text-shadow: 0 1px 0 #fff;
+  top: -.125rem;
+
+  &:hover {
+    opacity: .8;
+  }
+}
