@@ -3,6 +3,7 @@ require "normalize-rails"
 require "bourbon"
 require "breakpoint"
 require "jquery-tablesorter"
+require "jquery-datatables-rails"
 
 require "pul/assets/version"
 
