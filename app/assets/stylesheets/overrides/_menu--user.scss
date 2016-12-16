@@ -1,0 +1,23 @@
+@import '../components/header';
+
+.menu--user {
+  float: right;
+  height: $logo-height;
+
+  .dropdown-account {
+    height: $logo-height;
+  }
+
+  button {
+    @include vertical-align;
+
+    background: transparent;
+    border: 0;
+    color: $white;
+    height: ($logo-height / 1.5);
+  }
+
+  .dropdown-menu {
+    margin-top: 0.9em;
+  }
+}
