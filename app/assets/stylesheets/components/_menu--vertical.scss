@@ -1,0 +1,27 @@
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    font-size: 1.15rem;
+    display: block;
+    margin: 0;
+    padding: 0.5rem;
+
+    a {
+      display: block;
+      padding: .5em .5em .5em 1em;
+
+      &:hover {
+        background: $primary-color;
+        color: $white;
+      }
+    }
+
+    ul {
+      background: #f5f4f1;
+      border-radius: 4px;
+    }
+  }
+}

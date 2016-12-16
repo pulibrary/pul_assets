@@ -17,9 +17,11 @@
 @import "base/typography";
 @import "base/print";
 
+@import "components/alerts";
 @import "components/skip-main";
 @import "components/header";
 @import "components/menu";
+@import "components/menu--vertical";
 @import "components/pagination";
 @import "components/footer";
 @import "components/footer--sticky";
