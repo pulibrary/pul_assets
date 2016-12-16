@@ -23,21 +23,14 @@
 
   a {
     color: $black;
-    font-size: 1.75em;
-    height: 0;
-    left: 10px;
-    margin: 0;
-    padding-right: 0.2em;
-    position: absolute;
-    // text-shadow: 2px 2px $gray-darkest;
-    top: 10px;
-    width: 99%;
-    z-index: 1;
-
     display: inline-block;
-    height: 120px;
-    padding: 0;
-    width: 100%;
+    font-size: 1.75em;
+    height: 100px;
     line-height: 1.2em;
+    margin: 0;
+    padding: 0.5em;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
   }
 }
