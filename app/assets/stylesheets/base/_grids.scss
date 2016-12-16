@@ -13,3 +13,11 @@ $susy: (output: float, container: 1200px, columns: 12, gutters: 2 / 3, global-bo
 main {
   padding: 1em 0 2em 0;
 }
+
+.contain--half {
+  @include span(6);
+}
+
+.contain--half + .contain--half {
+  @include span(6 last);
+}
