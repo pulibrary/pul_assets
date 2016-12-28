@@ -10,17 +10,8 @@
 
 #sidebar,
 #content {
-    float: left;
     position: relative;
     padding: 0 1em;
-}
-
-#sidebar {
-    width: 33%;
-}
-
-#content {
-    width: 66%;
 }
 
 .facets-toggle {
