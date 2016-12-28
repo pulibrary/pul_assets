@@ -14,10 +14,26 @@ main {
   padding: 1em 0 2em 0;
 }
 
+#sidebar {
+  @include breakpoint($bp-med-2) {
+    @include span(4 of 12);
+  }
+}
+
+#content {
+  @include breakpoint($bp-med-2) {
+    @include span(8 of 12 last);
+  }
+}
+
 .contain--half {
-  @include span(6);
+  @include breakpoint($bp-med-2) {
+    @include span(6);
+  }
 }
 
 .contain--half + .contain--half {
-  @include span(6 last);
+  @include breakpoint($bp-med-2) {
+    @include span(6 last);
+  }
 }
