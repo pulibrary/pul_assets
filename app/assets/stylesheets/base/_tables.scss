@@ -2,10 +2,15 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: solid 1px $gray-light;
-  margin-bottom: 1em;
+  margin: 1em 0;
 
   tr {
     border: solid 1px $gray-light;
+  }
+
+  th {
+    font-weight: normal;
+    white-space: nowrap;
   }
 
   th,
