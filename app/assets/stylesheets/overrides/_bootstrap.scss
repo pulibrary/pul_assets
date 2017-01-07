@@ -25,6 +25,7 @@ $logo_image: 'blacklight/logo.png' !default;
     width: 150px;
     height: 50px;
     background: transparent image_url($logo_image) no-repeat top left;
+    background-size: contain;
     display: inline-block;
     text-indent: 100%;
     white-space: nowrap;
