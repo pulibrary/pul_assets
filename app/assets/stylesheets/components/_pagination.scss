@@ -1,24 +1,29 @@
-.pagination {
+.pagination,
+.dataTables_paginate {
 
     text-align: center;
-    display: inline;
-    margin: 0;
+    display: inline-block;
+    margin: 0.5rem 0 0;
     padding: 0;
 
-    li {
+    li,
+    .paginate_button {
       display: inline;
     }
 
-    li a {
+    li a,
+    .paginate_button {
       background: #f6f6f6;
       display: inline-block;
     }
 
     li a,
-    li span {
+    li span,
+    .paginate_button {
         border-radius: 3px;
         border: 1px solid gainsboro;
         color: #333;
+        cursor: pointer;
         outline: none;
         padding: 0.375em 0.809em;
         text-decoration: none;
@@ -27,14 +32,52 @@
 
         &:hover,
         &:focus {
-        }
-        &:active {
+            background: $primary-color;
+            color: $white;
         }
     }
 
+    .paginate_button {
+        margin-right: 4px;
+    }
+
+    .ellipsis {
+        border-radius: 3px;
+        border: 1px solid gainsboro;
+        color: #333;
+        cursor: pointer;
+        margin-right: 4px;
+        outline: none;
+        padding: 0.375em 0.809em;
+        text-decoration: none;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
     li span,
-    .disabled a {
+    .disabled a,
+    .paginate_button.disabled,
+    .paginate_button.current,
+    .ellipsis {
       background: transparent;
+      color: $gray;
       cursor: not-allowed;
+
+      &:hover,
+      &:focus {
+        background: transparent;
+        color: $gray;
+      }
+    }
+
+    .paginate_button.current,
+    .active span {
+        color: $black;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            color: $black;
+        }
     }
 }

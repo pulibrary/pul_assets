@@ -32,11 +32,8 @@
   &:focus,
   &-primary {
     background: $primary-color;
-    color: $white;
-  }
-
-  &:hover,
-  &:focus {
     border-color: $primary-color;
+    color: $white;
+    text-decoration: none;
   }
 }

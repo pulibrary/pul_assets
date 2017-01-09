@@ -1,0 +1,56 @@
+.dataTables_length,
+.dataTables_filter {
+  display: inline-block;
+
+  label {
+    font-weight: normal;
+    margin: 0;
+    vertical-align: middle;
+
+    select,
+    input {
+      vertical-align: middle;
+    }
+  }
+}
+
+.dataTables_length {
+  float: right;
+}
+
+.dataTables_filter input {
+  margin-left: 0.5em;
+  width: auto;
+}
+
+.dataTables_wrapper {
+  clear: both;
+}
+
+.dataTable th {
+  position: relative;
+
+  &.sorting_asc,
+  &.sorting_desc {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  // &.sorting_asc:after,
+  // &.sorting:after {
+  //   position: absolute;
+  //   top: 8px;
+  //   right: 8px;
+  //   display: block;
+  // }
+
+  // &.sorting_asc:after {
+  //   content: 'asc';
+  //   opacity: 0.5;
+  // }
+
+  // &.sorting:after {
+  //   opacity: 0.2;
+  //   content: "sort";
+  // }
+}

@@ -18,13 +18,12 @@
     }
 }
 
-$logo_image: 'blacklight/logo.png' !default;
-
 .navbar-brand {
     /* The main logo image for the Blacklight instance */
     width: 150px;
     height: 50px;
     background: transparent image_url($logo_image) no-repeat top left;
+    background-size: contain;
     display: inline-block;
     text-indent: 100%;
     white-space: nowrap;
@@ -67,6 +66,7 @@ $logo_image: 'blacklight/logo.png' !default;
 
 .facet-count {
     float: right;
+    text-align: right;
 }
 
 h1,
@@ -180,4 +180,49 @@ h6 {
 
 .flash_messages {
   padding: 0 1em;
+  display: inline-block;
+  width: 100%;
+}
+
+.button_to {
+  margin: 0;
+}
+
+td.actions {
+  text-align: right;
+}
+
+.navigation .navbar-right a {
+  font-family: $font-primary;
+  font-size: 1rem;
+}
+
+.navigation .navbar-right .navbar-nav li {
+  padding-right: 0;
+}
+
+.document-title-heading {
+  @include span(10 of 12 first);
+
+  font-size: 1.2em;
+  margin: 0 0 1em;
+}
+
+.index-document-functions {
+  @include span(2 of 12 last);
+}
+
+.document-metadata {
+  clear: both;
+}
+
+
+#sortAndPerPage {
+  clear: both;
+  margin-bottom: 1em;
+}
+
+.search_history td,
+.saved_searches td {
+    vertical-align: middle;
 }

@@ -3,6 +3,7 @@
 .menu--user {
   float: right;
   height: $logo-height;
+  font-size: 0.85rem;
 
   > li {
     height: $logo-height;
@@ -19,5 +20,6 @@
 
   .dropdown-menu {
     margin-top: 0.9em;
+    font-size: 0.85rem;
   }
 }
