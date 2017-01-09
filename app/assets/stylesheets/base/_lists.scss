@@ -24,6 +24,12 @@ dd {
   padding: 0 0 0.5em 0;
 }
 
+dd:after {
+  content: " ";
+  display: block;
+  clear: left;
+}
+
 // sir trevor
 .st__content-block--list ul {
   list-style-type: disc;
