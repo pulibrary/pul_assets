@@ -113,7 +113,7 @@ h6 {
     text-decoration: none;
 
     &.active:hover {
-      background-color: $tertiary-color;
+      background-color: $gray-lightest;
       border: 1px solid #e0ddd3;
       color: $black;
       cursor: not-allowed;
@@ -133,7 +133,7 @@ h6 {
 
 .constraint-value.btn:hover,
 .constraints-value.btn:focus {
-  background: $tertiary-color;
+  background: $gray-lightest;
   color: $black;
   border: 1px solid #e0ddd3;
 }

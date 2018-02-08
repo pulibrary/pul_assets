@@ -1,6 +1,6 @@
 .navigation {
-  background: $tertiary-color;
-  border-bottom: 1px solid darken($tertiary-color, 5);
+  background: $gray-lightest;
+  border-bottom: 1px solid darken($gray-lightest, 5);
   width: 100%;
   z-index: 101;
   position: relative;
@@ -17,7 +17,7 @@
 
     &:hover {
       text-decoration: none;
-      color: $secondary-color;
+      color: $princeton-orange;
     }
   }
 }
@@ -27,7 +27,7 @@
 }
 
 .menu--main {
-  background: $tertiary-color;
+  background: $gray-lightest;
 
   ul li {
     display: inline;
@@ -51,7 +51,7 @@
 
   .expanded:hover ul {
     display: block;
-    background: $tertiary-color;
+    background: $gray-lightest;
     left: -2em;
     position: absolute;
     margin-left: 2em;
