@@ -1,11 +1,11 @@
 .image-masthead,
 .masthead {
   .navbar {
-  background-color: $tertiary-color;
+  background-color: $gray-lightest;
   }
 
   .dropdown-menu {
-    background-color: $tertiary-color;
+    background-color: $gray-lightest;
     font-family: $font-secondary;
 
     > li > a:hover,
@@ -52,7 +52,7 @@
 }
 
 .masthead {
-  background-color: $tertiary-color;
+  background-color: $gray-lightest;
 }
 
 .search-query-form {

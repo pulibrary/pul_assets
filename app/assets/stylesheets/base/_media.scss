@@ -11,7 +11,7 @@ figure {
     display: block;
     margin: 0 auto;
     padding: 0.5rem;
-    border: 1px solid $tertiary-color;
+    border: 1px solid $gray-lightest;
     background-color: $white;
   }
 }
@@ -30,7 +30,7 @@ iframe {
 
 .browse-category,
 .browse-landing .category .image-overlay {
-  border: 1px solid $tertiary-color;
+  border: 1px solid $gray-lightest;
 }
 
 .browse-category,
@@ -61,7 +61,7 @@ iframe {
 }
 
 .item-grid-block .items-col .box .thumbnail a > img {
-  border-color: $tertiary-color;
+  border-color: $gray-lightest;
 }
 
 #slideshow-modal .modal-dialog .modal-content {

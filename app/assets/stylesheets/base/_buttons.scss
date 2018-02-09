@@ -2,12 +2,13 @@
   margin-top: 2.3rem;
 }
 
-.btn + .btn {
-  margin-right: 1em;
-}
+// when is this being used? needs more specificity. not very clear why there needs to be a right margin
+// .btn + .btn {
+//   margin-right: 1em;
+// }
 
 .btn {
-  background: $tertiary-color;
+  background: $gray-lightest;
   border: 1px solid $gray-light;
   color: $black;
   border-radius: 4px;

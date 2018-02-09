@@ -1,15 +1,12 @@
-table {
+.table {
   width: 100%;
-  border-collapse: collapse;
-  border: solid 1px $gray-light;
   margin: 1em 0;
 
   tr {
-    border: solid 1px $gray-light;
+    border-top: solid 1px $gray-light;
   }
 
   th {
-    font-weight: normal;
     white-space: nowrap;
   }
 
@@ -25,23 +22,31 @@ table {
   }
 }
 
-thead,
+.table thead tr {
+  border-top: 0;
+  border-bottom: 1px solid $gray;
+}
+
 .tablesorter-headerRow {
-  background: $gray-dark;
-  color: $white;
-  cursor: pointer;
+  border-bottom: 2px solid $gray;
+  color: $black;
 }
 
 // Zebra table stripes
+.table.table--striped thead tr {
+  background: $white;
+  font-weight: bold;
+}
+
 .table--striped tr:nth-child(even),
 .tablesorter-default tr.even > td,
 .tablesorter-filter-row {
-  background: $tertiary-color;
+  background: $white;
 }
 
 .table--striped tr:nth-child(odd),
 .tablesorter-default tr.odd > td {
-  background: $white;
+  background: $gray-lightest;
 }
 
 // Border around all cells

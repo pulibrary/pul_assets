@@ -17,7 +17,7 @@ textarea {
 
   &:focus {
     box-shadow: none;
-    border: solid 1px $secondary-color;
+    border: solid 1px $princeton-orange;
     z-index: 1;
   }
 }
@@ -118,12 +118,12 @@ input[type="week"] {
   font-family: $font-sans;
 
   &[disabled] {
-    background-color: $tertiary-color;
+    background-color: $gray-lightest;
   }
 
   &:focus {
     box-shadow: none;
-    border: solid 1px $secondary-color;
+    border: solid 1px $princeton-orange;
     z-index: 1;
   }
 }
@@ -418,5 +418,5 @@ label,
 }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
-  border: 1px solid $secondary-color;
+  border: 1px solid $princeton-orange;
 }
