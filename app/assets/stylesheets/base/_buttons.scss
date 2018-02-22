@@ -32,9 +32,46 @@
   &:hover,
   &:focus,
   &-primary {
-    background: $primary-color;
-    border-color: $primary-color;
+    background: $blue-dark;
+    border-color: $blue-dark;
     color: $white;
     text-decoration: none;
   }
+}
+
+// mudd-dbs form buttons in admin view
+.button_to {
+  margin: 0;
+}
+
+.btn-xs {
+  font-size: 0.75rem;
+  padding: 0.4em 0.5em;
+}
+
+.btn-info,
+a.button.btn-info,
+input[type="reset"].btn-info,
+input[type="button"].btn-info,
+input[type="submit"].btn-info {
+  background: $blue-light;
+  color: $black;
+}
+
+.btn-warning,
+a.button.btn-warning,
+input[type="reset"].btn-warning,
+input[type="button"].btn-warning,
+input[type="submit"].btn-warning {
+  background: $yellow-light;
+  color: $black;
+}
+
+.btn-danger,
+a.button.btn-danger,
+input[type="reset"].btn-danger,
+input[type="button"].btn-danger,
+input[type="submit"].btn-danger {
+  background: $red-light;
+  color: $black;
 }
