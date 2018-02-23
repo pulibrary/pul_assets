@@ -101,21 +101,26 @@ img.bookmark {
 
 // SVG logo
 .svg {
-  .rbsc-logo img {
+  .rbsc-logo .logo-no-svg {
     display: none;
   }
 
   .rbsc-logo {
-    background: image-url("rbsc_bookmark.svg") center center no-repeat;
-    background-size: contain;
     display: inline-block;
     float: left;
     height: 71px;
     width: 36px;
-
+    
     @include breakpoint($tab) {
       margin-left: 0;
     }
+  }
+}
+
+// PNG fallback for older browsers
+.no-svg {
+  .rbsc-logo .logo.svg {
+    display: none;
   }
 }
 
