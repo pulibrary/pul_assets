@@ -1,0 +1,30 @@
+version: 2.1
+
+orbs:
+  ruby: circleci/ruby@2.0
+
+jobs:
+  check_compatibility:
+    parameters:
+      rails-version:
+        type: string
+      ruby-version:
+        type: string
+    docker:
+      - image: cimg/ruby:<< parameters.ruby-version >>
+    steps:
+      - checkout
+      - run: gem install -v << parameters.rails-version >> rails
+      - run: rails _<< parameters.rails-version >>_ new test_app --skip-javascript --skip-spring --skip-git
+      - run: "echo \"gem 'pul-assets', path: '..'\" >> test_app/Gemfile"
+      - run: cd test_app && bundle install
+
+workflows:
+  version: 2
+  check_compatibility_and_test:
+    jobs:
+      - check_compatibility:
+          matrix:
+            parameters:
+              rails-version: ["6.0.6", "6.1.7", "7.0.4"]
+              ruby-version: ["2.7.5", "3.0.5", "3.1.3"]
