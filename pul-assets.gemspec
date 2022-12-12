@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "modernizr-rails", "~> 2.7.1"
   spec.add_dependency "normalize-rails", "~> 3.0.3"
-  spec.add_dependency "bourbon", "~> 4.2.6"
+  spec.add_dependency "bourbon", ">= 4.2.6"
   spec.add_dependency "susy", "~> 2.2.12"
   spec.add_dependency "breakpoint", "~> 2.7.0"
   spec.add_dependency "jquery-tablesorter", "~> 1.27.2"
